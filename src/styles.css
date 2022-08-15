@@ -1,0 +1,48 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+@keyframes btnFlutingoff {
+  0% {
+    height: rem(85);
+  }
+
+  100% {
+    height: rem(220);
+  }
+}
+
+.top {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  background: #006eff;
+  width: 100%;
+  height: 4rem;
+  transition: all 0.3s;
+  /* animation: btnFlutingoff 0.3s 0s ease 1 backwards; */
+}
+
+.top.hide {
+  height: 0rem;
+  /* display: none; */
+}
+
+.bottom {
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  left: 0;
+  background: #006eff;
+  width: 100%;
+  height: 4rem;
+  transition: all 0.3s;
+}
+
+.bottom.hide {
+  height: 0rem;
+  /* display: none; */
+}
